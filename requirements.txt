@@ -4,3 +4,6 @@ sqlalchemy
 pydantic
 databases
 asyncpg
+ruff
+mypy
+tailwindcss
