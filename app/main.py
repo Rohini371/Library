@@ -1,5 +1,4 @@
-# filepath: c:\Users\rohin\OneDrive\Desktop\Library\app\main.py
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from app.api.v1.endpoints import books, librarian, customer
@@ -17,7 +16,7 @@ app.include_router(customer.router, prefix="/api/v1/customer", tags=["customer"]
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
-async def read_root():
+async def read_root(request: Request) -> HTMLResponse:
     with open(os.path.join("app", "templates", "index.html")) as f:
         return HTMLResponse(content=f.read(), status_code=200)
 

@@ -1,0 +1,11 @@
+[tool.ruff]
+# Add ruff configuration options here
+line-length = 88
+select = ["E", "F", "C", "W"]
+
+[tool.mypy]
+# Add mypy configuration options here
+python_version = "3.8"
+warn_unused_configs = true
+warn_return_any = true
+warn_unused_ignores = true
