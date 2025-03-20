@@ -30,7 +30,7 @@ This is a Library Management System built using FastAPI. It includes features fo
    
 4. Install Visual C++ Build Tools (if not already installed):
    - Visit the [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) page and follow the instructions to download and install the tools.
-   - 
+
 5. Install the dependencies:
    
    pip install -r requirements.txt
